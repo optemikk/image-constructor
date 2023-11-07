@@ -2,6 +2,10 @@ from loader import *
 
 
 class ObjectFormat:
+    def __init__(self):
+        pass
+
+
     def get_object_path(self, user_obj: bool = False) -> str:
         obj_path = 'Creomaker/joints/user-objects/' if user_obj else 'Creomaker/joints/object/'
         objects = os.listdir(obj_path)

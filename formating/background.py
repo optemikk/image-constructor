@@ -2,6 +2,10 @@ from loader import *
 
 
 class BackgroundFormat:
+    def __init__(self):
+        pass
+
+
     def get_background_path(self) -> str:
         background = random.choices(['background/', 'background-left/', 'background-right/'], weights=[50, 25, 25])
         background_path = f'Creomaker/joints/{background[0]}'

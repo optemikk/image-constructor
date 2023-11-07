@@ -2,6 +2,10 @@ from loader import *
 
 
 class PersonFormat:
+    def __init__(self):
+        pass
+
+
     def get_person_path(self) -> str:
         pose = random.choice(['pers-left', 'pers-right'])
         pers_path = f'Creomaker/joints/{pose}/'

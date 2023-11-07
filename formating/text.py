@@ -10,6 +10,10 @@ font_sizes = {
 
 
 class TextFormat:
+    def __init__(self):
+        pass
+
+
     def get_font_path(self) -> str:
         font_path = 'Creomaker/fonts/'
         all_fonts = os.listdir(font_path)
@@ -158,10 +162,3 @@ class TextFormat:
 
 
 text_form = TextFormat()
-
-if __name__ == '__main__':
-    textform = TextFormat()
-    font_path = textform.get_font_path()
-    font = textform.get_image_font_object(font_path)
-    text_lines = textform.get_text_sized(font, True)
-    text_heights = textform.draw_text(text_lines, font)
